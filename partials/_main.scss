@@ -1,0 +1,46 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: $primary-05 ;
+    padding: 60px;
+
+    .foto img {
+        width: 150px;
+        height: 150px;
+        border-radius: 20%;
+        // margin: 50px 190px;
+
+    }
+
+    .Perfil {
+        text-align: center;
+        color: $primary-02;
+        font-size: 18px;
+
+        p {
+            width: 450px;
+            padding: 10px;
+        }
+    }
+
+    .hero-bnt {
+        padding: 10px 15px;
+        border-radius: 8px;
+        border: none;
+        transition-property: background-color, transform;
+        transition-duration: 1s;
+    }
+
+    .hero-bnt:hover {
+        background-color: $primary-04;
+        transform: scale(1.3);
+    }
+
+}

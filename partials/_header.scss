@@ -1,0 +1,325 @@
+header {
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+
+
+    .cobertura {
+        width: 100%;
+        background-color: $primary-05;
+    }
+
+    .header-content {
+        padding: 10px 0px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .portifolio {
+        font-size: 28px;
+        color: $primary-01;
+
+        span {
+            color: $primary-04;
+        }
+
+    }
+
+    .header-links {
+        margin-left: 170px;
+        gap: 190px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.9s;
+        font-weight: bold;
+
+        a {
+            color: $primary-02;
+        }
+    }
+
+    .header-links a:hover {
+        color: $primary-04;
+    }
+
+
+
+    .meu-nome {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        width: 100%;
+        height: 100%;
+        color: $primary-01;
+
+        .nome {
+            font-family: "Roboto", sans-serif;
+            font-size: 30px;
+            color: $primary-05;
+            padding: 0px -10px;
+            text-align: center;
+
+            h3 {
+                font-size: 24px;
+            }
+        }
+
+        .imagem {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 18%;
+            margin-bottom: 60px;
+
+            img {
+                width: 600px;
+                height: 450px;
+                border-radius: 5%;
+                box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            }
+        }
+
+        span {
+            color: $primary-04;
+        }
+    }
+
+}
+
+.closebtn {
+    display: none;
+}
+
+.menu-responsivo {
+    border: none;
+    background: none;
+    border-top: 3px solid $primary-02;
+    cursor: pointer;
+    display: none;
+
+}
+
+.menu-responsivo::before,
+.menu-responsivo::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: $primary-02;
+    margin-top: 5px;
+}
+
+.mobili-menu {
+    display: none;
+}
+
+//-------responsivo-------//
+@media (min-width: 450px) and (max-width: 730px) {
+    .menu-responsivo {
+        display: block;
+        cursor: pointer;
+        margin: 0 auto;
+    }
+
+    .ponto {
+        margin: 0 470px;
+    }
+
+    .x {
+        margin: 10px;
+        margin-left: 640px;
+        justify-content: space-around;
+        align-items: center;
+
+        .closebtn {
+            color: $primary-06;
+            font-size: 35px;
+            display: block;
+        }
+    }
+
+    .movi {
+        font-size: 20px;
+        align-items: center;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        line-height: 30px;
+
+    }
+
+    .mobili-menu {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: $primary-07 ;
+        width: 100%;
+        height: 100%;
+
+        animation-duration: 1s;
+        margin-left: -100%;
+
+        a {
+            color: $primary-02;
+        }
+    }
+
+    header {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .header-content {
+        width: 100%;
+    }
+
+    .portifolio {
+        display: block;
+        margin: 0 30px;
+    }
+
+    .header-links a {
+        display: none;
+    }
+
+    .imagem img {
+        display: none;
+    }
+
+    .imagem {
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .imagem img {
+        display: none;
+    }
+
+    header {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .hero {
+
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        background-color: $primary-05 ;
+        flex-direction: column;
+
+
+        .foto img {
+
+            align-items: center;
+            justify-content: center;
+
+        }
+
+
+        .Perfil {
+            // display: none;
+            margin: 10px;
+            // width: 100%;
+
+        }
+
+    }
+
+    .ponto {
+        margin: 0 220px;
+    }
+    
+    
+    .imagem {
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
+    .header-content {
+        width: 100%;
+    }
+
+    .header-links a {
+        display: none;
+    }
+
+    .portifolio {
+        display: block;
+        margin: 0 30px;
+    }
+
+    .menu-responsivo {
+        display: block;
+        cursor: pointer;
+        margin: 0 auto;
+    }
+
+    .x {
+        margin: 10px;
+        margin-left: 390px;
+        justify-content: space-around;
+        align-items: center;
+
+
+        .closebtn {
+            color: $primary-06;
+            font-size: 35px;
+            display: block;
+        }
+    }
+    
+    .movi {
+        font-size: 20px;
+        align-items: center;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        line-height: 30px;
+        
+    }
+
+    .mobili-menu {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: $primary-07 ;
+        width: 100%;
+        height: 100%;
+        margin-left: -100%;
+        
+        
+        transition-delay:1s ;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        
+        a {
+            color: $primary-02;
+        }
+    }
+
+
+
+}
